@@ -1,13 +1,13 @@
 function broUps() {
   var bros = ['Bobby', 'Richard', 'Other Ryan', 'Phillip', 'Taylor', 'Original Ryan', 'Todd', 'Sandeep'];
- // var whichBro = Math.floor(Math.random() * bros.length);
+  // var whichBro = Math.floor(Math.random() * bros.length);
   var pushups;
   bros.forEach(function(e) {
     pushups = pushupNumber(e);
     console.log(e + ": " + pushups);
   });
   console.log("\n");
-//  console.log(bros[whichBro] + ": " + pushups);
+  //  console.log(bros[whichBro] + ": " + pushups);
 }
 
 function pushupNumber(bros) {
@@ -15,36 +15,36 @@ function pushupNumber(bros) {
   switch (bros) {
     case 'Bobby':
       min = 20;
-      max = 40;
-      break;
+    max = 40;
+    break;
     case 'Taylor':
       min = 20;
-      max = 45;
-      break;
+    max = 45;
+    break;
     case 'Richard':
-      min = 30;
-      max = 50;
-      break;
+      min = 20;
+    max = 50;
+    break;
     case 'Original Ryan':
       min = 20;
-      max = 40;
-      break;
+    max = 40;
+    break;
     case 'Phillip':
-      min = 40;
-      max = 70;
-      break;
+      min = 20;
+    max = 50;
+    break;
     case 'Todd':
-      min = 200;
-      max = 305;
-      break;
+      min = 20;
+    max = 35;
+    break;
     case 'Other Ryan':
       min = 15;
-      max = 25;
-      break;
+    max = 25;
+    break;
     case 'Sandeep':
-      min = 100;
-      max = 1000;
-      break;
+      min = 10;
+    max = 20;
+    break;
     default:
       break;
   }
@@ -53,5 +53,6 @@ function pushupNumber(bros) {
 }
 
 
+broUps();
 var minutes = function(mins) { return mins * 60 * 1000; }
-setInterval(broUps, minutes(0.1));
+setInterval(broUps, minutes(30));
