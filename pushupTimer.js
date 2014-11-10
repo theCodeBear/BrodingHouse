@@ -53,6 +53,11 @@ function pushupNumber(bros) {
 }
 
 
+
+//var otherRyan = function() {
+
+
+
 broUps();
 var minutes = function(mins) { return mins * 60 * 1000; }
-setInterval(broUps, minutes(30));
+setInterval(broUps, minutes(10));
