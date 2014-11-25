@@ -25,7 +25,7 @@ function formatTime(time) {
 
 
 function broUps(setNum) {
-  var bros = ['Bobby', 'Richard', 'Other Ryan', 'Phillip', 'Taylor', 'Original Ryan', 'Todd', 'Sandeep'];
+  var bros = ['Bobby', 'Richard', 'Other Ryan', 'Phillip', 'Taylor', 'Original Ryan', 'Todd', 'Sandeep', 'Charlie'];
   // var whichBro = Math.floor(Math.random() * bros.length);
   var pushups;
   console.log("Set " + setNum + ":\n");
@@ -73,6 +73,10 @@ function pushupNumber(bros) {
       min = 10;
     max = 20;
     break;
+    case 'Charlie':
+      min = 10;
+      max = 20;
+      break;
     default:
       break;
   }
@@ -83,9 +87,8 @@ function pushupNumber(bros) {
 
 
 function main() {
-  var setNum = 1;
-  var restInMinutes = 10;
-  var minutes = function(mins) { return mins * 60 * 1000; }
+  var restInMinutes = 30;
+  var minutes = function(mins) { return mins * 60 * 1000; };
   var intervalDisplayInMilli = (minutes(restInMinutes)+2000);
   //console.log(intervalDisplayInMilli);
   console.log("\n");
@@ -94,4 +97,5 @@ function main() {
   setInterval(timer, intervalDisplayInMilli, minutes(restInMinutes)/1000);
 }
 
+var setNum = 1;
 main();
